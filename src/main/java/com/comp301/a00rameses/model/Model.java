@@ -13,6 +13,9 @@ public interface Model {
   /** Adds an observer to the model */
   void addObserver(ModelObserver observer);
 
-  /** Removes an observer from the model... won't be using this for this project but good to implement it as practice! */
+  /**
+   * Removes an observer from the model... won't be using this for this project but good to
+   * implement it as practice!
+   */
   void removeObserver(ModelObserver observer);
 }

@@ -24,7 +24,7 @@ public class ModelImpl implements Model {
     return lovesme;
   }
 
-  // getter for coutner
+  // getter for counter
   public int getCount() {
     return count;
   }
