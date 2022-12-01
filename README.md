@@ -77,7 +77,7 @@ The view must be re-rerendered every time a value in the model is changed. To ac
 
 Finally, the view must react to user actions, such as clicking on certain user interface elements. Do this by registering observers on the relevant JavaFX UI component events. Sometimes, an application state change is necessary in response to a user action. For example, if the user clicks the "next puzzle" button, the model must be instructed to go to the next puzzle. Make use of the controller's methods to do this. By utilizing the controller, you will enforce separation of concerns between your model and view, and enforce that the controller is an intermediary between the two.
 
-![example]()
+![example](https://raw.githubusercontent.com/edwardb1203/a00-rameses/master/Screen%20Shot%202022-12-01%20at%202.11.59%20PM.png)
 
 
 
