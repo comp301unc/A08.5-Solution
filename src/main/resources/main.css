@@ -5,27 +5,3 @@
  * JavaFX start() method:
  *   scene.getStylesheets().add("main.css");
  */
-
-.hbox {
-    -fx-background-color: #30a8f2;
-    -fx-padding: 15;
-    -fx-spacing: 10;
-}
-
-.vbox {
-    -fx-background-color: #30a8f2;
-    -fx-padding: 15;
-    -fx-spacing: 10;
-}
-
-.button{
-    -fx-border-color: rgb(49, 89, 23);
-    -fx-border-radius: 5;
-    -fx-padding: 3 6 6 6;
-}
-
-.label {
-    -fx-font-size: 20px;
-    -fx-font-weight: bold;
-    -fx-effect: dropshadow( gaussian , rgba(255,255,255,0.5) , 0,0,0,1 );
-}
