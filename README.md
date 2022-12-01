@@ -75,7 +75,7 @@ The `FXComponent` interface has just one method, named `render()`. `render()` is
 
 The view must be re-rerendered every time a value in the model is changed. To accomplish this, the view must register an active `ModelObserver` to observe the model instance. The easiest way to do this is by using an anonymous class or a lambda expression directly in the `start()` method of the `AppLauncher` class, since that is where you have a reference to the model. When a model change occurs, the `render()` methods should be called on each `FXComponent` instance, and the resulting new `Parent` objects should be inserted in the `Scene`, while being careful to clear any old, "stale" UI components.
 
-Finally, the view must react to user actions, such as clicking on certain user interface elements. Do this by registering observers on the relevant JavaFX UI component events. Sometimes, an application state change is necessary in response to a user action. For example, if the user clicks the "next puzzle" button, the model must be instructed to go to the next puzzle. Make use of the controller's methods to do this. By utilizing the controller, you will enforce separation of concerns between your model and view, and enforce that the controller is an intermediary between the two.
+Finally, the view must react to user actions, such as clicking on certain user interface elements. Do this by registering observers on the relevant JavaFX UI component events. By utilizing the controller, you will enforce separation of concerns between your model and view, and enforce that the controller is an intermediary between the two.
 
 
 ![example](https://raw.githubusercontent.com/edwardb1203/a00-rameses/master/Screen%20Shot%202022-12-01%20at%202.11.47%20PM.png)
