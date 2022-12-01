@@ -32,6 +32,7 @@ The `ModelImpl` class should be a "subject" with respect to the observer design 
 the `ModelObserver` interface defines a single method, `update()`, and is used together with the `ModelImpl` class to implement the observer design pattern.
 
 `ModelImpl` should therefore notify its active observers whenever *any* `Model` field value is changed. 
+Hint*- You will want to implement a notifyobservers method.
 
 You need not implement the `ModelObserver` interface, but you may wish to implement it in your `View` class so your view can respond to model changes. Refer to youtube tutorial if you are confused on what this means in practice.
 
