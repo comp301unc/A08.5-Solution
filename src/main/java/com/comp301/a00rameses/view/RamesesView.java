@@ -6,8 +6,7 @@ import javafx.scene.Parent;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.VBox;
-
-// Purpose of this class is to display appropriate rameses photo
+// This class is to display image
 public class RamesesView implements FXComponent {
   private final Model model;
   private final ClassicMvcController controller;
@@ -19,35 +18,26 @@ public class RamesesView implements FXComponent {
 
   @Override
   public Parent render() {
-    // Create vbox to store
     VBox pane = new VBox();
-    // Clear children
     pane.getChildren().clear();
-    // Make a rameses
     ImageView rameses = makeimage();
-    // Add to pane
     pane.getChildren().add(rameses);
     return pane;
   }
 
   private ImageView makeimage() {
-    // creating the image object
     Image image;
-    if (model.getLovesme()) {
-      image = new Image("rameses2.jpg");
+    if (model.getLoves()) {
+      image = new Image("rameses_love.jpg");
     } else {
-      image = new Image("rameses_sadd.jpg");
+      image = new Image("rameses_love_not.jpg");
     }
-    // Creating the image view
     ImageView imageView = new ImageView();
-    // Setting image to the image view
     imageView.setImage(image);
-    // Setting the image view parameters
     imageView.setX(10);
     imageView.setY(10);
     imageView.setFitWidth(575);
     imageView.setPreserveRatio(true);
-    // return
     return imageView;
   }
 }

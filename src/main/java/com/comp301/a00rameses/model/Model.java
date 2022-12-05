@@ -2,7 +2,7 @@ package com.comp301.a00rameses.model;
 
 public interface Model {
   /** Returns boolean representing loves me or not */
-  boolean getLovesme();
+  boolean getLoves();
 
   /** Returns count of times asked */
   int getCount();
